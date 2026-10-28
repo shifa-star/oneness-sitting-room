@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sanctuary Sitting Room</title>
+  <meta name="robots" content="noindex">
+  <!--
+    Unknown paths return to the sitting room. The query string is kept
+    so ?ref= and via= survive. On GitHub Pages the site root is
+    /oneness-sitting-room/. After DNS cutover the house is
+    https://app.onenesswellnesslifestyles.com/ and this file sends
+    people to "/" on that host. Do not change DNS from this repository.
+  -->
+  <script>
+    (function () {
+      var search = window.location.search || "";
+      var hash = window.location.hash || "";
+      var host = window.location.hostname || "";
+      var base = "/";
+      if (/\.github\.io$/i.test(host)) {
+        var parts = window.location.pathname.split("/").filter(Boolean);
+        base = "/" + (parts[0] || "oneness-sitting-room") + "/";
+      }
+      window.location.replace(base + search + hash);
+    })();
+  </script>
+</head>
+<body>
+  <p>Returning to the Sanctuary Sitting Room.</p>
+  <p><a id="room" href="/oneness-sitting-room/">Open the Sitting Room</a></p>
+  <script>
+    (function () {
+      var search = window.location.search || "";
+      var hash = window.location.hash || "";
+      var host = window.location.hostname || "";
+      var base = "/";
+      if (/\.github\.io$/i.test(host)) {
+        var parts = window.location.pathname.split("/").filter(Boolean);
+        base = "/" + (parts[0] || "oneness-sitting-room") + "/";
+      }
+      var link = document.getElementById("room");
+      if (link) link.setAttribute("href", base + search + hash);
+    })();
+  </script>
+</body>
+</html>
