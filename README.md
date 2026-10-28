@@ -6,6 +6,8 @@ Advocate Sitting Room for Oneness Wellness Sanctuary. Plain HTML, CSS, and JavaS
 
 https://shifa-star.github.io/oneness-sitting-room/
 
+Publishing uses `.github/workflows/deploy.yml` from this repository root on every push to `main`. The automation token cannot create the Pages site. A person with admin needs to open [Settings → Pages](https://github.com/shifa-star/oneness-sitting-room/settings/pages) once, choose **GitHub Actions** as the source, leave the custom domain empty, and re-run **Deploy static content to Pages**. Do not change DNS.
+
 Tracking links use `?ref=<Name>&via=person`. The advocate list is in [LINKS.md](LINKS.md).
 
 Example: https://shifa-star.github.io/oneness-sitting-room/?ref=Rita&via=person
